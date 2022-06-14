@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-primary">
+  <section class="hero is-light">
     <div class="hero-body">
       <div class="tabs is-boxed is-centered main-menu">
         <ul>
