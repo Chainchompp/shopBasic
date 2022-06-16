@@ -6,57 +6,57 @@
           <aside class="menu">
             <ul class="menu-list">
               <li>
-                <router-link to="/home">Home</router-link>
+                <router-link replace to="/home">Home</router-link>
               </li>
               <li>
-                <router-link to="/home">Dashboards</router-link>
+                <router-link replace to="/home">Dashboards</router-link>
               </li>
               <li>
-                <router-link :to="{ path: '/catalog' }"
+                <router-link replace :to="{ path: '/catalog' }"
                   >Modificar cátalogo</router-link
                 >
 
                 <ul>
                   <li>
-                    <router-link :to="{ path: '/catalog/modify' }"
+                    <router-link replace :to="{ path: '/catalog/modify' }"
                       >Modificar Producto</router-link
                     >
                   </li>
                   <li>
-                    <router-link :to="{ path: '/catalog/remove' }"
+                    <router-link replace :to="{ path: '/catalog/remove' }"
                       >Eliminar Producto</router-link
                     >
                   </li>
                   <li>
-                    <router-link :to="{ path: '/catalog/add' }"
+                    <router-link replace :to="{ path: '/catalog/add' }"
                       >Añadir Producto</router-link
                     >
                   </li>
                 </ul>
               </li>
               <li>
-                <router-link :to="{ path: '/inventory' }"> Gestionar Inventario</router-link>
+                <router-link replace :to="{ path: '/inventory' , name: 'inventory' }"> Gestionar Inventario</router-link>
                 <ul>
                   <li>
-                    <router-link  :to="{ path: '/inventory/create' }">
+                    <router-link replace  :to="{ path: '/inventory/create' }">
                       Orden de compra</router-link
                     >
                   </li>
                   <li>
-                    <router-link :to="{ path: '/inventory/confirm' }">
+                    <router-link replace :to="{ path: '/inventory/confirm' }">
                       Confirmar Entregas</router-link
                     >
                   </li>
                 </ul>
               </li>
               <li>
-                <router-link to="/"> Productos</router-link>
+                <router-link replace to="/products"> Productos</router-link>
               </li>
               <li>
-                <router-link to="/"> Realizar Venta</router-link>
+                <router-link replace to="/sell"> Realizar Venta</router-link>
               </li>
               <li>
-                <router-link to="/"> Pedidos</router-link>
+                <router-link replace to="/orders"> Pedidos</router-link>
               </li>
             </ul>
           </aside>

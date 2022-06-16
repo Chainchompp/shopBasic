@@ -5,6 +5,9 @@ import LoginPage from "../views/LoginPage.vue"
 import HomePage from "../views/HomePage.vue"
 import CatalogPage from "../views/CatalogPage.vue"
 import InventoryPage from "../views/InventoryPage.vue"
+import ProductPage from "../views/ProductPage.vue"
+import OrderPage from "../views/OrderPage.vue"
+import SellPage from "../views/SellPage.vue"
 
 import ModifyCatalog from "../components/ModifyCatalog.vue"
 import AddCatalog from "../components/AddCatalog.vue"
@@ -91,6 +94,36 @@ const routes = [
             }
 
         ]
+    },
+    {
+        path: '/orders',
+        name: 'orders',
+        alias: '',
+        component: OrderPage,
+        meta: {
+            layout: LayoutDefault,
+            requireAuth: false,
+        }
+    },
+    {
+        path: '/products',
+        name: 'products',
+        alias: '',
+        component: ProductPage,
+        meta: {
+            layout: LayoutDefault,
+            requireAuth: false,
+        }
+    },
+    {
+        path: '/sell',
+        name: 'sell',
+        alias: '',
+        component: SellPage,
+        meta: {
+            layout: LayoutDefault,
+            requireAuth: false,
+        }
     },
 
 ]

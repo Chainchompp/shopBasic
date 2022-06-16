@@ -1,15 +1,15 @@
 <template>
-  <section class="hero is-primary">
+  <section class="hero is-light">
     <div class="hero-body">
       <div class="tabs is-boxed is-centered main-menu">
         <ul>
-          <router-link to="/inventory/create" active-class="has-background-success">
+          <router-link to="/inventory/create" active-class="has-background-primary has-text-white">
             <li>
               <span>Orden de compra</span>
             </li>
           </router-link>
           <router-link
-            active-class="has-background-success"
+            active-class="has-background-primary has-text-white"
             to="/inventory/confirm"
           >
             <li>

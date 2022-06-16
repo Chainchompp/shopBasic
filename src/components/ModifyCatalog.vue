@@ -30,7 +30,7 @@
       <div class="field is-expanded">
         <div class="field has-addons">
           <p class="control">
-            <button class="button is-primary">Buscar</button>
+            <button class="button is-primary">Buscar Producto</button>
           </p>
         </div>
       </div>
