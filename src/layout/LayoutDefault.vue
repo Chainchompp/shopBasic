@@ -18,6 +18,11 @@
 
                 <ul>
                   <li>
+                    <router-link replace :to="{ path: '/catalog/add' }"
+                      >Añadir Producto</router-link
+                    >
+                  </li>
+                  <li>
                     <router-link replace :to="{ path: '/catalog/modify' }"
                       >Modificar Producto</router-link
                     >
@@ -27,18 +32,18 @@
                       >Eliminar Producto</router-link
                     >
                   </li>
-                  <li>
-                    <router-link replace :to="{ path: '/catalog/add' }"
-                      >Añadir Producto</router-link
-                    >
-                  </li>
                 </ul>
               </li>
               <li>
-                <router-link replace :to="{ path: '/inventory' , name: 'inventory' }"> Gestionar Inventario</router-link>
+                <router-link
+                  replace
+                  :to="{ path: '/inventory', name: 'inventory' }"
+                >
+                  Gestionar Inventario</router-link
+                >
                 <ul>
                   <li>
-                    <router-link replace  :to="{ path: '/inventory/create' }">
+                    <router-link replace :to="{ path: '/inventory/create' }">
                       Orden de compra</router-link
                     >
                   </li>
